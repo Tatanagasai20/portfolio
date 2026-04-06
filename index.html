@@ -272,6 +272,36 @@
             font-size: 15px;
             line-height: 1.7;
         }
+
+        .timeline-date {
+            color: var(--text-light);
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 16px !important;
+        }
+
+        .timeline-list {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0 0 0;
+        }
+
+        .timeline-list li {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .timeline-list li:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
         
         /* Contact */
         .contact-section {
@@ -724,7 +754,7 @@
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20241013_222026_991-YdkqC6RhMohEYdZGEIHb5GlgOyytHi.jpg" alt="T Naga Sai Kumar" class="profile-photo">
             <h1>T Naga Sai Kumar</h1>
             <p class="tagline">AWS DevOps Engineer</p>
-            <p class="subtitle">6+ years of experience in IT and 4+ years into DevOps, Cloud Automation, CI/CD, and AWS Infrastructure</p>
+            <p class="subtitle">5+ years of experience in IT and 4.5+ years of expertise in DevOps Engineering, Cloud Infrastructure, and CI/CD Automation</p>
             <div class="cta-buttons">
                 <a href="mailto:nagasaitata20@gmail.com" class="btn btn-primary" onclick="handleEmailClick(event, 'nagasaitata20@gmail.com')">
                     <i class="fas fa-envelope"></i> Get In Touch
@@ -741,21 +771,9 @@
             <h2 class="section-title">About Me</h2>
             <p class="section-subtitle">Dedicated DevOps professional with strong AWS and automation expertise</p>
             <div class="about-text">
-                <p>
-                    I am T Naga Sai Kumar, a results-driven DevOps Engineer with over 6 years of experience in the software industry, including 4+ years focused on Build & Release and DevOps practices.
-                </p>
-                <p>
-                    My expertise lies in automating infrastructure, building robust CI/CD pipelines, containerizing applications, and managing scalable AWS environments. I have hands-on experience with tools like Jenkins, Docker, Kubernetes, Ansible, Terraform, and Git, along with deep knowledge of AWS services such as EC2, S3, VPC, Route53, IAM, Load Balancers, and Auto Scaling.
-                </p>
-                <p>
-                    Currently working as a DevOps Engineer at Priacc Innovations, I manage end-to-end CI/CD processes, deploy containerized applications, and optimize AWS infrastructure for performance and cost efficiency.
-                </p>
-                <p>
-                    Previously, I worked as a Workday Techno-Functional Consultant at Dentsu, building integrations (EIB, Core Connectors, PICOF, PECI), custom reports, and handling HCM configurations. My earlier roles at Ticketmaster, DSV Global Transport, and Highmark Health strengthened my AWS DevOps skills through real-world implementations of infrastructure automation, monitoring, and production support.
-                </p>
-                <p>
-                    I am passionate about continuous improvement, automation, and delivering reliable, scalable solutions that drive organizational success.
-                </p>
+                <p>Results-driven DevOps Engineer with 5+ years of experience in the software industry, including 4.5+ years specialising in DevOps engineering, cloud infrastructure, and CI/CD automation. Proven expertise in designing and maintaining Jenkins pipelines integrated with SonarQube for code quality and Nexus for artifact management, automating infrastructure with Terraform and Ansible, and managing containerised workloads on Kubernetes and Docker.</p>
+
+                <p>Experienced with AWS services including EC2, VPC, S3, EKS, ECS, ECR, RDS, Route 53, IAM, ACM, CloudWatch, SNS, and Auto Scaling. Skilled in monitoring and alerting using Prometheus, Grafana, and AWS SNS with Slack and email notification integrations. Hands-on experience with Jira for project tracking, Git for version control, Shell scripting, Maven build automation, and Linux server administration.</p>
             </div>
         </div>
     </section>
@@ -765,59 +783,179 @@
             <h2 class="section-title">Technical Expertise</h2>
             <p class="section-subtitle">Technologies and tools I work with</p>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fas fa-tools skill-icon"></i>
-                        <h3>DevOps & Automation</h3>
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-laptop skill-icon"></i>
+                            <h3>Operating Systems</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Linux (RHEL, Ubuntu)</span>
+                            <span class="skill-tag">Windows</span>
+                        </div>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Maven</span>
-                        <span class="skill-tag">Shell Scripting</span>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-code-branch skill-icon"></i>
+                            <h3>CI/CD</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Maven</span>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fas fa-server skill-icon"></i>
-                        <h3>Containerization & Orchestration</h3>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-check-circle skill-icon"></i>
+                            <h3>Code Quality</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SonarQube</span>
+                        </div>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">Docker Swarm</span>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-archive skill-icon"></i>
+                            <h3>Artifact Management</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Nexus Repository Manager</span>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fab fa-aws skill-icon"></i>
-                        <h3>AWS Cloud</h3>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-box skill-icon"></i>
+                            <h3>Containerization</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Amazon EKS</span>
+                            <span class="skill-tag">ECS</span>
+                            <span class="skill-tag">ECR</span>
+                        </div>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">EC2</span>
-                        <span class="skill-tag">S3</span>
-                        <span class="skill-tag">VPC</span>
-                        <span class="skill-tag">Route53</span>
-                        <span class="skill-tag">IAM</span>
-                        <span class="skill-tag">Load Balancer</span>
-                        <span class="skill-tag">Auto Scaling</span>
-                        <span class="skill-tag">CloudWatch</span>
-                        <span class="skill-tag">EBS</span>
-                        <span class="skill-tag">AMI</span>
-                        <span class="skill-tag">ACM</span>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-server skill-icon"></i>
+                            <h3>Infrastructure as Code</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Ansible</span>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-card-header">
-                        <i class="fas fa-chart-line skill-icon"></i>
-                        <h3>Monitoring</h3>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-cloud skill-icon"></i>
+                            <h3>Cloud Platform (AWS)</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">EC2</span>
+                            <span class="skill-tag">VPC</span>
+                            <span class="skill-tag">S3</span>
+                            <span class="skill-tag">Route 53</span>
+                            <span class="skill-tag">EKS</span>
+                            <span class="skill-tag">ECS</span>
+                            <span class="skill-tag">ECR</span>
+                            <span class="skill-tag">RDS</span>
+                            <span class="skill-tag">EBS</span>
+                            <span class="skill-tag">IAM</span>
+                            <span class="skill-tag">ACM</span>
+                            <span class="skill-tag">CloudWatch</span>
+                            <span class="skill-tag">SNS</span>
+                            <span class="skill-tag">Auto Scaling</span>
+                            <span class="skill-tag">Elastic Beanstalk</span>
+                            <span class="skill-tag">DynamoDB</span>
+                            <span class="skill-tag">EFS</span>
+                            <span class="skill-tag">CloudTrail</span>
+                            <span class="skill-tag">CloudFormation</span>
+                        </div>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">CloudWatch</span>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-chart-line skill-icon"></i>
+                            <h3>Monitoring & Observability</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Prometheus</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">AWS CloudWatch</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-bell skill-icon"></i>
+                            <h3>Notifications & Alerting</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS SNS</span>
+                            <span class="skill-tag">Slack Integrations</span>
+                            <span class="skill-tag">Email Notifications</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-tasks skill-icon"></i>
+                            <h3>Project Management</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Jira</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-code-branch skill-icon"></i>
+                            <h3>Version Control</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-terminal skill-icon"></i>
+                            <h3>Scripting</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Shell Scripting</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">Ansible Scripting</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-server skill-icon"></i>
+                            <h3>Web & App Servers</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Apache Tomcat</span>
+                            <span class="skill-tag">Nginx</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <i class="fas fa-network-wired skill-icon"></i>
+                            <h3>Remote Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SSH</span>
+                            <span class="skill-tag">WinSCP</span>
+                            <span class="skill-tag">PuTTY</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -829,65 +967,65 @@
             <h2 class="section-title">Work Experience</h2>
             <p class="section-subtitle">My professional journey</p>
             <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-badge">Current</span>
-                    <h3>DevOps Engineer</h3>
-                    <p class="company-name">Priacc Innovations Pvt Ltd</p>
-                    <p><strong>May 2025 – Present</strong></p>
-                    <ul style="margin-left: 20px; line-height: 1.8; color: var(--text-light);">
-                        <li>Managed CI/CD pipelines using Jenkins for Maven and React applications</li>
-                        <li>Containerized and deployed applications using Docker</li>
-                        <li>Automated infrastructure and configuration management with Ansible and Terraform</li>
-                        <li>Configured and managed AWS services: S3, EBS, AMI, ACM, Route53, VPC, IAM, Load Balancers, Auto Scaling</li>
-                        <li>Created AMIs, managed EBS volumes, EC2 instances, DNS records, and IAM policies</li>
-                        <li>Coordinated deployments and performed troubleshooting & optimization</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>Workday Techno Functional Consultant</h3>
-                    <p class="company-name">Dentsu (Prudential Project)</p>
-                    <p><strong>July 2023 – January 2025</strong></p>
-                    <ul style="margin-left: 20px; line-height: 1.8; color: var(--text-light);">
-                        <li>Built EIBs, Document Transformations, Custom Reports, and Core Connectors</li>
-                        <li>Developed security configurations for 96 integrations</li>
-                        <li>Worked on PICOF, PECI, calculated fields, and downstream integrations</li>
-                        <li>Supported production integrations, resolved data issues, and monitored incidents</li>
-                        <li>Coordinated with onsite teams and participated in testing phases</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>AWS DevOps Engineer</h3>
-                    <p class="company-name">Ticketmaster India Pvt Ltd</p>
-                    <p><strong>October 2022 – March 2023</strong></p>
-                    <ul style="margin-left: 20px; line-height: 1.8; color: var(--text-light);">
-                        <li>Managed Docker containers and Kubernetes workloads</li>
-                        <li>Automated build, test, and deployment processes in Jenkins</li>
-                        <li>Implemented Infrastructure as Code using Terraform</li>
-                        <li>Collaborated with development teams to optimize application performance</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>AWS DevOps Engineer</h3>
-                    <p class="company-name">DSV Global Transport and Logistics (via UJR Technologies)</p>
-                    <p><strong>January 2021 – October 2022</strong></p>
-                    <ul style="margin-left: 20px; line-height: 1.8; color: var(--text-light);">
-                        <li>Worked with EC2, ELB, S3, RDS, DynamoDB, VPC, Route53, CloudFormation, IAM, etc.</li>
-                        <li>Launched/configured EC2 instances, managed security groups, Load Balancers, and Auto Scaling</li>
-                        <li>Implemented CI/CD pipelines with Docker, Jenkins, and Ansible</li>
-                        <li>Provided 24/7 on-call support</li>
-                    </ul>
-                </div>
-                <div class="timeline-item">
-                    <h3>AWS DevOps Engineer</h3>
-                    <p class="company-name">Highmark Health (IBC UM Health Application) (via UJR Technologies)</p>
-                    <p><strong>October 2019 – November 2020</strong></p>
-                    <ul style="margin-left: 20px; line-height: 1.8; color: var(--text-light);">
-                        <li>Configured EC2 instances, S3 buckets, and VPC</li>
-                        <li>Managed source code with Git and built CI pipelines using Jenkins</li>
-                        <li>Used Ansible playbooks for configuration management</li>
-                        <li>Exposure to Auto Scaling, Load Balancing, CloudWatch, and EBS snapshots</li>
-                    </ul>
-                </div>
+                    <div class="timeline-item">
+                        <span class="timeline-badge">Current</span>
+                        <h3>DevOps Engineer</h3>
+                        <p class="company-name">Cynosure software solutions put ltd</p>
+                        <p class="timeline-date">June 2023 - Present | Hyderabad, Telangana</p>
+                        <ul class="timeline-list">
+                            <li>Managed end-to-end CI/CD pipelines using Jenkins integrated with SonarQube for static code analysis and Nexus Repository for artifact storage and versioning.</li>
+                            <li>Configured Slack notifications and email alerts via AWS SNS for pipeline build status, deployment events, and production incident alerts.</li>
+                            <li>Containerized applications using Docker and orchestrated deployments using Kubernetes on Amazon EKS clusters across Dev, QA, and Production.</li>
+                            <li>Provisioned and managed cloud infrastructure using Terraform, implementing Infrastructure as Code for repeatable and automated environment setup.</li>
+                            <li>Automated configuration management and operational tasks using Ansible playbooks and roles across 30+ servers.</li>
+                            <li>Worked extensively with AWS services including EC2, S3, EBS, AMI, ACM, Route 53, VPC, IAM, Load Balancer, Auto Scaling, CloudWatch, and SNS.</li>
+                            <li>Created and managed AMIs, EBS volumes, EC2 instance configurations, and Application and Network Load Balancers with Auto Scaling groups.</li>
+                            <li>Managed DNS records using Route 53 and administered IAM users, roles, and policies with secure access controls.</li>
+                            <li>Implemented monitoring and observability using Prometheus and Grafana with alerting integrated into Slack channels and email via SNS.</li>
+                            <li>Tracked and managed project tasks, sprint planning, and incident tickets using Jira in coordination with development and QA teams.</li>
+                            <li>Coordinated deployments, performed troubleshooting, and optimised system performance across client environments.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-badge">6 months</span>
+                        <h3>DevOps Engineer</h3>
+                        <p class="company-name">Ticketmaster India Pvt Ltd</p>
+                        <p class="timeline-date">October 2022 - March 2023 | Gurgaon, Haryana</p>
+                        <ul class="timeline-list">
+                            <li>Collaborated with development teams to optimise application performance and operational stability of workloads.</li>
+                            <li>Built and maintained CI/CD pipelines in Jenkins with SonarQube integration for automated code quality checks on every build.</li>
+                            <li>Managed Nexus Repository for storing and managing build artifacts and Docker images across environments.</li>
+                            <li>Configured AWS SNS topics for email and Slack notifications on CloudWatch alarms, deployment completions, and production alerts.</li>
+                            <li>Managed Docker containers for application packaging and consistent deployment across environments.</li>
+                            <li>Deployed and maintained Kubernetes workloads including services, deployments, config maps, and persistent volumes.</li>
+                            <li>Implemented Infrastructure as Code using Terraform for provisioning and managing AWS resources.</li>
+                            <li>Worked with AWS services including EC2, VPC, Route 53, S3, IAM, RDS, EBS, AMIs, CloudWatch, and SNS.</li>
+                            <li>Monitored and resolved production incidents; used Jira to log, track, and close incidents within SLA timelines.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-badge">3+ years</span>
+                        <h3>DevOps Engineer</h3>
+                        <p class="company-name">Vigit technologies put ltd</p>
+                        <p class="timeline-date">July 2019 - October 2022 | Hyderabad, Telangana</p>
+                        <ul class="timeline-list">
+                            <li>Worked with AWS services including EC2, ELB, S3, Elastic Beanstalk, CloudFront, EFS, RDS, DynamoDB, VPC, Route 53, CloudWatch, CloudTrail, CloudFormation, and IAM.</li>
+                            <li>Launched and configured EC2 instances; managed security groups, Load Balancers, and Auto Scaling groups.</li>
+                            <li>Built AWS infrastructure using CloudFormation templates for repeatable and automated provisioning.</li>
+                            <li>Worked with S3 and Glacier for storage and backup with lifecycle policies.</li>
+                            <li>Created CloudWatch alarms integrated with AWS SNS for email and Slack notifications on infrastructure events and threshold breaches.</li>
+                            <li>Integrated SonarQube into Jenkins pipelines for continuous code quality analysis across multiple Java projects.</li>
+                            <li>Used Nexus Repository Manager for managing Maven build artifacts and Docker image registries.</li>
+                            <li>Used Ansible for configuration automation and file operations across multiple servers.</li>
+                            <li>Implemented CD pipelines using Docker and AWS; designed CI pipelines using Git, Jenkins, and Docker.</li>
+                            <li>Set up and managed Kubernetes clusters for containerised application deployments.</li>
+                            <li>Deployed Java and J2EE applications via Apache Tomcat; performed log analysis and issue tracking using Jira.</li>
+                            <li>Provided 24/7 on-call production support for critical infrastructure and application issues.</li>
+                        </ul>
+                    </div>
+
             </div>
         </div>
     </section>
@@ -902,10 +1040,10 @@
                     <h3>Email</h3>
                     <p>nagasaitata20@gmail.com</p>
                 </a>
-                <a href="https://wa.me/919959627583" target="_blank" class="contact-card">
-                    <i class="fab fa-whatsapp contact-icon"></i>
+<a href="https://wa.me/919030519062" target="_blank" class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
                     <h3>WhatsApp</h3>
-                    <p>+91 9959627583</p>
+                    <p>+91 9030519062</p>
                 </a>
                 <a href="https://www.linkedin.com/in/nagasaikumar20/" target="_blank" class="contact-card">
                     <i class="fab fa-linkedin contact-icon"></i>
@@ -932,9 +1070,9 @@
         <i class="fas fa-robot"></i>
     </a>
 
-    <a href="https://wa.me/919959627583" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<a href="https://wa.me/919030519062" target="_blank" class="whatsapp-float">
+                <i class="fab fa-whatsapp"></i>
+            </a>
 
     <div class="chat-widget" id="chatWidget">
         <div class="chat-header">
@@ -964,7 +1102,7 @@
         const kb = {
             skills: {
                 keywords: ['skill', 'tech', 'tool', 'know', 'expertise', 'technology', 'proficient'],
-                response: "Naga Sai Kumar has expertise in:\n\n🛠️ DevOps: Jenkins, Ansible, Terraform, Git, Maven, Shell Scripting\n🐳 Containerization: Docker, Kubernetes\n☁️ AWS: EC2, S3, VPC, Route53, IAM, Load Balancer, Auto Scaling, CloudWatch\n📊 Monitoring: Prometheus, Grafana, CloudWatch"
+                response: "Technical Skills:\n\n💻 Operating Systems: Linux (RHEL, Ubuntu), Windows\n🔄 CI/CD: Jenkins, Maven\n✅ Code Quality: SonarQube\n📦 Artifact Management: Nexus Repository Manager\n🐳 Containerization: Docker, Kubernetes, Amazon EKS, ECS, ECR\n🏗️ Infrastructure as Code: Terraform, Ansible\n☁️ AWS: EC2, VPC, S3, Route 53, EKS, ECS, ECR, RDS, EBS, IAM, ACM, CloudWatch, SNS, Auto Scaling, Elastic Beanstalk, DynamoDB, EFS, CloudTrail, CloudFormation\n📊 Monitoring: Prometheus, Grafana, AWS CloudWatch\n🔔 Alerts: AWS SNS, Slack Integrations\n📋 Tools: Jira, Git, GitHub, Shell Scripting, Bash, Apache Tomcat, Nginx, SSH, WinSCP, PuTTY"
             },
             aws: {
                 keywords: ['aws', 'amazon', 'cloud', 'ec2', 's3', 'lambda', 'eks'],
@@ -980,7 +1118,7 @@
             },
             experience: {
                 keywords: ['experience', 'work', 'job', 'company', 'career', 'position'],
-                response: "6+ years of experience:\n\n🏢 Current: DevOps Engineer at Priacc Innovations (May 2025–Present)\n🏢 Workday Consultant at Dentsu (2023–2025)\n🎫 DevOps at Ticketmaster, DSV, and Highmark Health\n\nStrong background in AWS, DevOps, and Workday integrations"
+                response: "5+ years of software industry experience:\n\n🏢 DevOps Engineer at Cynosure software solutions pvt ltd (June 2023–Present)\n   • Managed CI/CD pipelines with Jenkins, SonarQube, Nexus\n   • Containerized applications with Docker & Kubernetes on EKS\n   • Provisioned infrastructure with Terraform & Ansible\n   • Implemented Prometheus & Grafana monitoring\n\n🏢 DevOps Engineer at Ticketmaster India Pvt Ltd (Oct 2022–Mar 2023)\n   • Built CI/CD pipelines & Kubernetes deployments\n   • Managed AWS infrastructure & Terraform IaC\n\n🏢 DevOps Engineer at Vigit technologies pvt ltd (Jul 2019–Oct 2022)\n   • Managed AWS services & CloudFormation\n   • Implemented Kubernetes & Docker deployments\n   • Provided 24/7 production support"
             },
             projects: {
                 keywords: ['project', 'achievement', 'accomplish', 'built', 'implemented'],
@@ -995,8 +1133,8 @@
                 response: "Infrastructure as Code:\n\n🏗️ Terraform for AWS resource provisioning\n✅ Automated and repeatable infrastructure deployment"
             },
             contact: {
-                keywords: ['contact', 'email', 'phone', 'reach', 'hire', 'connect', 'linkedin'],
-                response: "Let's connect! 🤝\n\n📧 Email: nagasaitata20@gmail.com\n📱 WhatsApp: +91 9959627583\n💼 LinkedIn: linkedin.com/in/nagasaikumar20\n\nFeel free to reach out!"
+keywords: ['contact', 'email', 'phone', 'reach', 'hire', 'connect', 'linkedin'],
+                    response: "Let's connect! 🤝\n\n📧 Email: nagasaitata20@gmail.com\n📱 WhatsApp: +91 9030519062\n💼 LinkedIn: linkedin.com/in/nagasaikumar20\n\nFeel free to reach out!"
             },
             help: {
                 keywords: ['help', 'what can you', 'options', 'menu'],
